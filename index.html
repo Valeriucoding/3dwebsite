@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Floor</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <style>
+        body { margin: 0; }
+    </style>
+</head>
+<body>
+<a-scene>
+    <a-assets>
+        <img id="floor" src="https://t3.ftcdn.net/jpg/01/66/93/62/360_F_166936259_xnla1tO9WGGxKDPfylNmJco4SwIM4J1s.jpg" alt="Floor texture">
+    </a-assets>
+
+    <!-- Floor -->
+    <a-plane material="src: #floor; repeat: 10 10" rotation="-90 0 0" width="20" height="20"></a-plane>
+
+    <a-box color="red" position="0 0.5 -3" depth="1" height="1" width="1"></a-box>
+
+    <!-- Lighting-->
+    <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
+    <a-light type="directional" color="#ffffff" position="1 1 1" intensity="0.8"></a-light>
+
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera>
+</a-scene>
+</body>
+</html>
