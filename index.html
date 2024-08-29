@@ -14,23 +14,34 @@
 <a-scene>
     <a-assets>
         <img id="floor" src="https://t3.ftcdn.net/jpg/01/66/93/62/360_F_166936259_xnla1tO9WGGxKDPfylNmJco4SwIM4J1s.jpg" alt="Floor texture">
+        <img id="wall" src="https://cloud-l38c5yrce-hack-club-bot.vercel.app/0image.png" alt="Wall texture">
+        <img id="car-cu-boi" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Nicolae_Grigorescu_-_Car_cu_boi.jpg" alt="Car cu boi">
+        <img id="starry-night" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/757px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Starry Night">
+        <img id="caffe-terrace" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG" alt="Caffe Terrace">
+        <img id="museum-sign" src="https://cloud-gadov71ra-hack-club-bot.vercel.app/0dall__e_2024-08-29_17.22.01_-_a_vibrant_museum_sign_inspired_by_the_artistic_style_of_vincent_van_gogh__featuring_bold__swirling_brushstrokes_and_rich_colors._the_sign_includes_the.jpg" alt="Museum Sign">
     </a-assets>
 
     <!-- Floor -->
     <a-plane material="src: #floor; repeat: 10 10; side: double" rotation="-90 0 0" width="20" height="20"></a-plane>
 
     <!-- Walls -->
-    <a-box material="src: #floor; repeat: 10 10" width="0.1" height="10" depth="20" position="10 5 0" ></a-box>
-    <a-box material="src: #floor; repeat: 10 10" width="0.1" height="10" depth="20" position="-10 5 0"></a-box>
-    <a-box material="src: #floor; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 10" ></a-box>
-    <a-box material="src: #floor; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 -10" ></a-box>
+    <a-box material="src: #wall; repeat: 10 10" width="0.1" height="10" depth="20" position="10 5 0" ></a-box>
+    <a-box material="src: #wall; repeat: 10 10" width="0.1" height="10" depth="20" position="-10 5 0"></a-box>
+    <a-box material="src: #wall; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 10" ></a-box>
+    <a-box material="src: #wall; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 -10" ></a-box>
 
-    <a-box color="red" position="0 0.5 -3" depth="1" height="1" width="1"></a-box>
+    <!--  Artwork  -->
+    <a-plane material="src: #car-cu-boi; repeat: 1 1; side: double" width="5" height="5" position="9.9 5 0" rotation="0 90 0"></a-plane>
+    <a-plane material="src: #starry-night; repeat: 1 1; side: double" width="5" height="5" position="-9.9 5 0" rotation="0 -90 0"></a-plane>
+    <a-plane material="src: #caffe-terrace; repeat: 1 1; side: double" width="5" height="5" position="0 5 9.9" rotation="0 180 0"></a-plane>
+    <a-plane material="src: #museum-sign; repeat: 1 1; side: double" width="10" height="5" position="0 3 -9.9" rotation="0 0 0"></a-plane>
 
     <!-- Lighting-->
     <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
-    <a-light type="directional" color="#ffffff" position="1 1 1" intensity="0.8"></a-light>
-
+    <a-light type="directional" color="#ffffff" position="1 1 1" intensity="0.2"></a-light>
+    <a-light type="directional" color="#ffffff" position="-1 1 1" intensity="0.2"></a-light>
+    <a-light type="directional" color="#ffffff" position="1 1 -1" intensity="0.2"></a-light>
+    <a-light type="directional" color="#ffffff" position="-1 1 -1" intensity="0.2"></a-light>
     <a-camera>
         <a-cursor></a-cursor>
     </a-camera>
