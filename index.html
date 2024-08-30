@@ -7,41 +7,74 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.2/dist/aframe-physics-system.min.js"></script>
     <style>
-        body { margin: 0; }
+        body {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
 <a-scene>
     <a-assets>
-        <img id="floor" src="https://t3.ftcdn.net/jpg/01/66/93/62/360_F_166936259_xnla1tO9WGGxKDPfylNmJco4SwIM4J1s.jpg" alt="Floor texture">
+        <img id="floor" src="https://t3.ftcdn.net/jpg/01/66/93/62/360_F_166936259_xnla1tO9WGGxKDPfylNmJco4SwIM4J1s.jpg"
+             alt="Floor texture">
         <img id="wall" src="https://cloud-l38c5yrce-hack-club-bot.vercel.app/0image.png" alt="Wall texture">
-        <img id="car-cu-boi" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Nicolae_Grigorescu_-_Car_cu_boi.jpg" alt="Car cu boi">
-        <img id="starry-night" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/757px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Starry Night">
-        <img id="caffe-terrace" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG" alt="Caffe Terrace">
-        <img id="museum-sign" src="https://cloud-gadov71ra-hack-club-bot.vercel.app/0dall__e_2024-08-29_17.22.01_-_a_vibrant_museum_sign_inspired_by_the_artistic_style_of_vincent_van_gogh__featuring_bold__swirling_brushstrokes_and_rich_colors._the_sign_includes_the.jpg" alt="Museum Sign">
+        <img id="car-cu-boi"
+             src="https://upload.wikimedia.org/wikipedia/commons/9/90/Nicolae_Grigorescu_-_Car_cu_boi.jpg"
+             alt="Car cu boi">
+        <img id="starry-night"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/757px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+             alt="Starry Night">
+        <img id="caffe-terrace"
+             src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG"
+             alt="Caffe Terrace">
+        <img id="museum-sign"
+             src="https://cloud-gadov71ra-hack-club-bot.vercel.app/0dall__e_2024-08-29_17.22.01_-_a_vibrant_museum_sign_inspired_by_the_artistic_style_of_vincent_van_gogh__featuring_bold__swirling_brushstrokes_and_rich_colors._the_sign_includes_the.jpg"
+             alt="Museum Sign">
         <img id="github-logo" src="https://cloud-mo1hxor83-hack-club-bot.vercel.app/0pngwing.com.png" alt="GitHub Logo">
-        <img id="sunset-on-a-lake" src="https://cloud-i7o83d8ag-hack-club-bot.vercel.app/0lukisan_lanskap.jpg" alt="Sunset on a Lake">
+        <img id="sunset-on-a-lake" src="https://cloud-i7o83d8ag-hack-club-bot.vercel.app/0lukisan_lanskap.jpg"
+             alt="Sunset on a Lake">
         <img id="sunrise-on-sea" src="https://cloud-q44dwngsx-hack-club-bot.vercel.app/0image.png" alt="Sunrise on Sea">
-        <img id=""
+        <img id="italy-boat" src="https://cloud-ciwp6fk3d-hack-club-bot.vercel.app/0image.png" alt="Italy Boat">
+        <img id="spring-forest" src="https://cloud-q72ye3zp3-hack-club-bot.vercel.app/0image.png" alt="Spring Forest">
+        <img id="people-harvesting-flowers" src="https://cloud-gen2uc094-hack-club-bot.vercel.app/0image.png" alt="People Harvesting Flowers">
+        <img id="woman-feeding-chicken" src="https://cloud-glq94rkfl-hack-club-bot.vercel.app/0image.png" alt="Woman Feeding Chicken">
     </a-assets>
 
     <!-- Floor -->
     <a-plane material="src: #floor; repeat: 10 10; side: double" rotation="-90 0 0" width="20" height="20"></a-plane>
 
     <!-- Walls -->
-    <a-box material="src: #wall; repeat: 10 10" width="0.1" height="10" depth="20" position="10 5 0" ></a-box>
+    <a-box material="src: #wall; repeat: 10 10" width="0.1" height="10" depth="20" position="10 5 0"></a-box>
     <a-box material="src: #wall; repeat: 10 10" width="0.1" height="10" depth="20" position="-10 5 0"></a-box>
-    <a-box material="src: #wall; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 10" ></a-box>
-    <a-box material="src: #wall; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 -10" ></a-box>
+    <a-box material="src: #wall; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 10"></a-box>
+    <a-box material="src: #wall; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 -10"></a-box>
 
 
     <!--  Artwork  -->
-    <a-plane material="src: #car-cu-boi; repeat: 1 1; side: double" width="5" height="5" position="9.9 5 0" rotation="0 90 0"></a-plane>
-    <a-plane material="src: #starry-night; repeat: 1 1; side: double" width="5" height="5" position="-9.9 5 -6" rotation="0 -90 0"></a-plane>
-    <a-plane material="src: #sunset-on-a-lake; repeat: 1 1; side: double" width="5" height="5" position="-9.9 5 0" rotation="0 -90 0"></a-plane>
-    <a-plane material="src: #sunrise-on-sea; repeat: 1 1; side: double" width="5" height="5" position="-9.9 5 6" rotation="0 -90 0"></a-plane>
-    <a-plane material="src: #caffe-terrace; repeat: 1 1; side: double" width="5" height="5" position="0 5 9.9" rotation="0 180 0"></a-plane>
-    <a-plane material="src: #museum-sign; repeat: 1 1; side: double" width="10" height="5" position="0 3 -9.9" rotation="0 0 0"></a-plane>
+    <a-plane material="src: #starry-night; repeat: 1 1; side: double" width="5" height="5" position="-9.9 3 -6"
+             rotation="0 -90 0"></a-plane>
+    <a-plane material="src: #sunset-on-a-lake; repeat: 1 1; side: double" width="5" height="5" position="-9.9 3 0"
+             rotation="0 -90 0"></a-plane>
+    <a-plane material="src: #sunrise-on-sea; repeat: 1 1; side: double" width="5" height="5" position="-9.9 3 6"
+             rotation="0 -90 0"></a-plane>
+
+    <a-plane material="src: #car-cu-boi; repeat: 1 1; side: double" width="5" height="5" position="9.9 3 0"
+             rotation="0 90 0"></a-plane>
+    <a-plane material="src: #people-harvesting-flowers; repeat: 1 1; side: double" width="5" height="5" position="9.9 3 6"
+             rotation="0 90 0"></a-plane>
+    <a-plane material="src: #woman-feeding-chicken; repeat: 1 1; side: double" width="5" height="5" position="9.9 3 -6"
+             rotation="0 90 0"></a-plane>
+
+    <a-plane material="src: #caffe-terrace; repeat: 1 1; side: double" width="5" height="5" position="0 3 9.9"
+             rotation="0 180 0"></a-plane>
+    <a-plane material="src: #italy-boat; repeat: 1 1; side: double" width="5" height="5" position="6 3 9.9"
+             rotation="0 180 0"></a-plane>
+    <a-plane material="src: #spring-forest; repeat: 1 1; side: double" width="5" height="5" position="-6 3 9.9"
+             rotation="0 180 0"></a-plane>
+
+
+    <a-plane material="src: #museum-sign; repeat: 1 1; side: double" width="10" height="5" position="0 3 -9.9"
+             rotation="0 0 0"></a-plane>
 
     <!-- Lighting-->
     <a-light type="ambient" color="#ffffff" intensity="0.5"></a-light>
