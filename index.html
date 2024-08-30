@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Floor</title>
+    <title>3d Art Museum</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.2/dist/aframe-physics-system.min.js"></script>
     <style>
@@ -19,6 +19,10 @@
         <img id="starry-night" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/757px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Starry Night">
         <img id="caffe-terrace" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Vincent_van_Gogh_%281853-1890%29_Caf%C3%A9terras_bij_nacht_%28place_du_Forum%29_Kr%C3%B6ller-M%C3%BCller_Museum_Otterlo_23-8-2016_13-35-40.JPG" alt="Caffe Terrace">
         <img id="museum-sign" src="https://cloud-gadov71ra-hack-club-bot.vercel.app/0dall__e_2024-08-29_17.22.01_-_a_vibrant_museum_sign_inspired_by_the_artistic_style_of_vincent_van_gogh__featuring_bold__swirling_brushstrokes_and_rich_colors._the_sign_includes_the.jpg" alt="Museum Sign">
+        <img id="github-logo" src="https://cloud-mo1hxor83-hack-club-bot.vercel.app/0pngwing.com.png" alt="GitHub Logo">
+        <img id="sunset-on-a-lake" src="https://cloud-i7o83d8ag-hack-club-bot.vercel.app/0lukisan_lanskap.jpg" alt="Sunset on a Lake">
+        <img id="sunrise-on-sea" src="https://cloud-q44dwngsx-hack-club-bot.vercel.app/0image.png" alt="Sunrise on Sea">
+        <img id=""
     </a-assets>
 
     <!-- Floor -->
@@ -30,9 +34,12 @@
     <a-box material="src: #wall; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 10" ></a-box>
     <a-box material="src: #wall; repeat: 10 10" width="20" height="10" depth="0.1" position="0 5 -10" ></a-box>
 
+
     <!--  Artwork  -->
     <a-plane material="src: #car-cu-boi; repeat: 1 1; side: double" width="5" height="5" position="9.9 5 0" rotation="0 90 0"></a-plane>
-    <a-plane material="src: #starry-night; repeat: 1 1; side: double" width="5" height="5" position="-9.9 5 0" rotation="0 -90 0"></a-plane>
+    <a-plane material="src: #starry-night; repeat: 1 1; side: double" width="5" height="5" position="-9.9 5 -6" rotation="0 -90 0"></a-plane>
+    <a-plane material="src: #sunset-on-a-lake; repeat: 1 1; side: double" width="5" height="5" position="-9.9 5 0" rotation="0 -90 0"></a-plane>
+    <a-plane material="src: #sunrise-on-sea; repeat: 1 1; side: double" width="5" height="5" position="-9.9 5 6" rotation="0 -90 0"></a-plane>
     <a-plane material="src: #caffe-terrace; repeat: 1 1; side: double" width="5" height="5" position="0 5 9.9" rotation="0 180 0"></a-plane>
     <a-plane material="src: #museum-sign; repeat: 1 1; side: double" width="10" height="5" position="0 3 -9.9" rotation="0 0 0"></a-plane>
 
@@ -42,6 +49,11 @@
     <a-light type="directional" color="#ffffff" position="-1 1 1" intensity="0.2"></a-light>
     <a-light type="directional" color="#ffffff" position="1 1 -1" intensity="0.2"></a-light>
     <a-light type="directional" color="#ffffff" position="-1 1 -1" intensity="0.2"></a-light>
+
+    <a-entity position="0 6 -9.8" rotation="0 0 0">
+        <a-image src="#github-logo" width="1" height="1" position="-2.5 0 0"></a-image>
+        <a-text value="@Valeriucoding" color="black" align="center" width="5" position="-1.3 0 0"></a-text>
+    </a-entity>
     <a-camera>
         <a-cursor></a-cursor>
     </a-camera>
